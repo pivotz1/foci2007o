@@ -44,7 +44,7 @@ for m in meccsek:
 # ez ugyan nem a feladat része, de elegánsabb, ha csak létező csapatneveket fodagunk el:
 hcsapatok = set(map(lambda m: m['hazaicsapat'].lower(), meccsek))
 vcsapatok = set(map(lambda m: m['vendegcsapat'].lower(), meccsek))
-csapatok = list(set(list(hcsapatok) + list(vcsapatok)))    # halmazba!
+csapatok = list(set(list(hcsapatok) + list(vcsapatok)))    # halmazba (lista-halmaz-lista)!
 csapat = input("4. feladat: Kérek egy csapatnevet: ")
 while csapat.lower() not in csapatok:
     csapat = input("4. feladat: Kérek egy csapatnevet: ")
